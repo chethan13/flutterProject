@@ -91,6 +91,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20, 10, 20, 20),
                                   child: TextFormField(
+                                    maxLength: 10,
                                     controller: mobileNumberController,
                                     onChanged: (_) => EasyDebounce.debounce(
                                       'mobileNumberController',
@@ -140,6 +141,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20, 10, 20, 20),
                                   child: TextFormField(
+                                    maxLength: 10,
                                     controller: passwordController,
                                     onChanged: (_) => EasyDebounce.debounce(
                                       'passwordController',
